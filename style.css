@@ -1,0 +1,192 @@
+/* Common styles for all fields */
+.field {
+  display: grid;
+  grid-gap: 5px;
+}
+
+.field > .block {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Custom styling for specific blocks */
+.field-1 > .block:nth-child(1),
+.field-1 > .block:nth-child(2),
+.field-1 > .block:nth-child(3) {
+  background-color: #ff8c00;
+}
+
+/* Field 2 */
+.field-2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.field-2 > .block:nth-child(1),
+.field-2 > .block:nth-child(2),
+.field-2 > .block:nth-child(3) {
+  background-color: #008000;
+}
+
+/* Field 3 */
+.field-3 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 100px;
+}
+
+.field-3 > .block:nth-child(1),
+.field-3 > .block:nth-child(3),
+.field-3 > .block:nth-child(5),
+.field-3 > .block:nth-child(7) {
+  background-color: #4169e1;
+}
+
+/* Field 4 */
+.field-4 {
+  grid-template-columns: repeat(3, 50px);
+  justify-content: start;
+  align-content: start;
+}
+
+.field-4 > .block:nth-child(1),
+.field-4 > .block:nth-child(2),
+.field-4 > .block:nth-child(3) {
+  background-color: #800080;
+}
+
+/* Field 5 */
+.field-5 {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.field-5 > .block:nth-child(2) {
+  background-color: #ff0000;
+}
+
+/* Field 6 */
+.field-6 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.field-6 > .block:nth-child(1),
+.field-6 > .block:nth-child(2),
+.field-6 > .block:nth-child(3),
+.field-6 > .block:nth-child(4),
+.field-6 > .block:nth-child(5),
+.field-6 > .block:nth-child(6),
+.field-6 > .block:nth-child(7),
+.field-6 > .block:nth-child(8),
+.field-6 > .block:nth-child(9) {
+  background-color: #ffa500;
+}
+
+/* Field 7 */
+.field-7 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.field-7 > .block:nth-child(1),
+.field-7 > .block:nth-child(2),
+.field-7 > .block:nth-child(3),
+.field-7 > .block:nth-child(4),
+.field-7 > .block:nth-child(5),
+.field-7 > .block:nth-child(6),
+.field-7 > .block:nth-child(7),
+.field-7 > .block:nth-child(8),
+.field-7 > .block:nth-child(9),
+.field-7 > .block:nth-child(10),
+.field-7 > .block:nth-child(11),
+.field-7 > .block:nth-child(12),
+.field-7 > .block:nth-child(13),
+.field-7 > .block:nth-child(14),
+.field-7 > .block:nth-child(15),
+.field-7 > .block:nth-child(16) {
+  background-color: #0000ff;
+}
+
+/* Field 8 */
+.field-8 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.field-8 > .block:nth-child(1) {
+  background-color: #ff0000;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.field-8 > .block:nth-child(2),
+.field-8 > .block:nth-child(3) {
+  background-color: #ffa500;
+}
+
+/* Field 9 */
+.field-9 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 
+    "a a b c c"
+    "a a b d e"
+    "f f g d e"
+    "h h g i i"
+    "j j g i i";
+}
+
+.field-9 > .block:nth-child(1) {
+  grid-area: a;
+  background-color: #ff8c00;
+}
+
+.field-9 > .block:nth-child(2) {
+  grid-area: b;
+  background-color: #008000;
+}
+
+.field-9 > .block:nth-child(3) {
+  grid-area: c;
+  background-color: #4169e1;
+}
+
+.field-9 > .block:nth-child(4) {
+  grid-area: d;
+  background-color: #800080;
+}
+
+.field-9 > .block:nth-child(5) {
+  grid-area: e;
+  background-color: #ff0000;
+}
+
+.field-9 > .block:nth-child(6) {
+  grid-area: f;
+  background-color: #ffa500;
+}
+
+.field-9 > .block:nth-child(7) {
+  grid-area: g;
+  background-color: #0000ff;
+}
+
+.field-9 > .block:nth-child(8) {
+  grid-area: h;
+  background-color: #ff0000;
+}
+
+.field-9 > .block:nth-child(9) {
+  grid-area: i;
+  background-color: #ffa500;
+}
+
+.field-9 > .block:nth-child(10) {
+  grid-area: j;
+  background-color: #ff0000;
+}
+
+
+
+
+
