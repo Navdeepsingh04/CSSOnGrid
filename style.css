@@ -35,17 +35,22 @@
 }
 
 .field-3 > .block:nth-child(1),
+.field-3 > .block:nth-child(2),
 .field-3 > .block:nth-child(3),
+.field-3 > .block:nth-child(4),
 .field-3 > .block:nth-child(5),
-.field-3 > .block:nth-child(7) {
+.field-3 > .block:nth-child(6),
+.field-3 > .block:nth-child(7),
+.field-3 > .block:nth-child(8){
   background-color: #4169e1;
 }
 
 /* Field 4 */
 .field-4 {
   grid-template-columns: repeat(3, 50px);
-  justify-content: start;
-  align-content: start;
+  justify-content: center;
+  align-content: center;
+  
 }
 
 .field-4 > .block:nth-child(1),
@@ -56,72 +61,124 @@
 
 /* Field 5 */
 .field-5 {
+ display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  
 }
 
-.field-5 > .block:nth-child(2) {
-  background-color: #ff0000;
+.field-5 .block:nth-child(1) {
+  align-self:start;
+  background-color:#800080
 }
-
+.field-5 .block:nth-child(2) {
+  align-self:start;
+  background-color:#800080
+}
+.field-5 .block:nth-child(3) {
+ align-self:end;
+  background-color:#800080
+}
 /* Field 6 */
 .field-6 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "a a a  "
+    "b b c  "
+    "d e e "
+    ;
+
+
 }
 
-.field-6 > .block:nth-child(1),
-.field-6 > .block:nth-child(2),
-.field-6 > .block:nth-child(3),
-.field-6 > .block:nth-child(4),
-.field-6 > .block:nth-child(5),
-.field-6 > .block:nth-child(6),
-.field-6 > .block:nth-child(7),
-.field-6 > .block:nth-child(8),
-.field-6 > .block:nth-child(9) {
-  background-color: #ffa500;
+.field-6 > .block:nth-child(1) {
+  grid-area: a;
+  background-color: #ff8c00;
+}
+.field-6 > .block:nth-child(2) {
+  grid-area: b;
+  background-color: #ff8c00;
+}
+.field-6 > .block:nth-child(3) {
+  grid-area: c;
+  background-color: #ff8c00;
+}
+.field-6 > .block:nth-child(4) {
+  grid-area: d;
+  background-color: #ff8c00;
+}
+.field-6 > .block:nth-child(5) {
+  grid-area: e;
+  background-color: #ff8c00;
+
 }
 
 /* Field 7 */
 .field-7 {
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+   grid-template-areas: 
+    "a a a a "
+    "b b c c "
+    "b b c c "
+    "b b e d "
+    ;
+  
+  
+  
 }
 
-.field-7 > .block:nth-child(1),
-.field-7 > .block:nth-child(2),
-.field-7 > .block:nth-child(3),
-.field-7 > .block:nth-child(4),
-.field-7 > .block:nth-child(5),
-.field-7 > .block:nth-child(6),
-.field-7 > .block:nth-child(7),
-.field-7 > .block:nth-child(8),
-.field-7 > .block:nth-child(9),
-.field-7 > .block:nth-child(10),
-.field-7 > .block:nth-child(11),
-.field-7 > .block:nth-child(12),
-.field-7 > .block:nth-child(13),
-.field-7 > .block:nth-child(14),
-.field-7 > .block:nth-child(15),
-.field-7 > .block:nth-child(16) {
+.field-7 > .block:nth-child(1) {
+  grid-area: a;
+  background-color: #ff8c00;
+}
+.field-7 > .block:nth-child(2) {
+  grid-area: b;
+  background-color: #ff8c00;
+}
+.field-7 > .block:nth-child(3) {
+  grid-area: c;
+  background-color: #ff8c00;
+}
+.field-7 > .block:nth-child(4) {
+  grid-area: d;
+  background-color: #ff8c00;
+}
+.field-7 > .block:nth-child(5) {
+  grid-area: e;
+  background-color: #ff8c00;
+}
+
+{
   background-color: #0000ff;
 }
+
 
 /* Field 8 */
 .field-8 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  
+    
 }
 
 .field-8 > .block:nth-child(1) {
-  background-color: #ff0000;
+  background-color: #0000ff;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
 
-.field-8 > .block:nth-child(2),
+.field-8 > .block:nth-child(2){
+  background-color: #ff0000;
+  grid-column: 2/span 2;
+  grid-row: 1/span 1;
+  
+}
 .field-8 > .block:nth-child(3) {
   background-color: #ffa500;
+  grid-column: 1/span 3;
+  grid-row: 2/span 3;
 }
 
 /* Field 9 */
@@ -129,11 +186,11 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas: 
-    "a a b c c"
-    "a a b d e"
-    "f f g d e"
-    "h h g i i"
-    "j j g i i";
+    "a a a a a "
+    "b b d d c "
+    "b b d d c "
+    "b b f e c "
+    "g g g g g ";
 }
 
 .field-9 > .block:nth-child(1) {
@@ -170,23 +227,4 @@
   grid-area: g;
   background-color: #0000ff;
 }
-
-.field-9 > .block:nth-child(8) {
-  grid-area: h;
-  background-color: #ff0000;
-}
-
-.field-9 > .block:nth-child(9) {
-  grid-area: i;
-  background-color: #ffa500;
-}
-
-.field-9 > .block:nth-child(10) {
-  grid-area: j;
-  background-color: #ff0000;
-}
-
-
-
-
 
